@@ -1,0 +1,76 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* LAYOUT
+/*****************************************/
+
+/* I recieved some of these code snippets after researching a tutorial online https://www.geeksforgeeks.org/simple-tic-tac-toe-game-using-javascript/ and an easy flexflox grid tutorial https://www.google.com/search?q=lflex+grid+four+col+3+row+clickable+with+js&oq=lflex+grid+four+col+3+row+clickable+with+js&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQIRgKGKABMgkIAhAhGAoYoAEyCQgDECEYChigATIJCAQQIRgKGKABMgkIBRAhGAoYoAHSAQkyMDQ0NGowajeoAgiwAgE&sourceid=chrome&ie=UTF-8 */
+
+body {
+  background-color: bisque;
+}
+main {
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  width: 150px;
+ margin: 150px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.cell {
+  background-color: #d8bbbb;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 40px;
+  font-size: 30px;
+  color: black;
+  border: 1px solid saddlebrown;
+}
+
+button {
+  align-items: center;
+height: 50px;
+width: 100px;
+border-radius: 5px;
+border: none;
+color: wheat;
+background-color: rgb(255, 162, 0);
+}
+
+/* Player turn space */
+#print {
+  color: rgb(255, 139, 30);
+  font-size: 20px;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
